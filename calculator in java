@@ -1,0 +1,52 @@
+package operators;
+
+import java.util.Scanner;
+
+public class Calculator2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("enter first number");
+		float a= sc.nextFloat();
+		
+		System.out.println("enter the operation");
+		sc.nextLine();
+		char operation=sc.nextLine().charAt(0);
+		
+		System.out.println("enter the second number");
+		float b=sc.nextFloat(); 
+		
+		float result= 0;
+		
+		switch(operation) {
+		case '+':
+			result=a+b;
+			break;
+		case '-':
+			result=a-b;
+			break;
+		case '*':
+		result=a*b;
+		break;
+		case '/':
+			result=a/b;
+			break;
+		case '%':
+			result =a%b;
+			break;
+			default:
+				System.out.println("Invalid Operation");
+				
+			
+	
+			
+		
+		}System.out.println("the result is " +result);
+	
+		
+	 	
+		
+
+	}
+
+}
